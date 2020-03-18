@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forget"
+    tools:context=".Profile"
+    >
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:id="@+id/pic"
+            android:gravity="center"
+            android:background="@drawable/background">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+
+                android:id="@+id/profilepic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/uploadpic"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="5dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#cc0000" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Rname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pic"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+           >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/name"
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/Rgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rname"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/userGender"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/gender"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/Remail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rgender"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/email"
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/Rmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Remail"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Mobile Number"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/userMobileNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/mobile"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/RDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rmobile"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/dateofbirth"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Date Of Birth"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/userDateOfBirth"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/dateofbirth"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/Raddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RDateOfBirth"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Address"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/userAddress"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/address"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/Rcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Raddress"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="City"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/userCity"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/city"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Rstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rcity"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="State"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/userState"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/state"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Rcountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rstate"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Country"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/userCountry"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/country"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Rpincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rcountry"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/pincode"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Area Pincode"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/userPincode"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/pincode"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Rbloodgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rpincode"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/bloodgroup"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Blood Group"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/userBloodGroup"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/bloodgroup"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Reditprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rbloodgroup"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:elevation="3dp"
+            android:padding="15dp"
+            >
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textStyle="bold"
+                android:background="@drawable/btnprofile"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
